@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "258859639733",
+    "project_id": "authentification-ded65",
+    "storage_bucket": "authentification-ded65.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:258859639733:android:c0ab2603f8819ff8dfaffc",
+        "android_client_info": {
+          "package_name": "com.authentification"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "258859639733-ar2bmkpg6dbe1les4j00ne8toe90l4e4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDvqIVvorbrhTYhdW_oGkL0W4FZr3ssHtY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "258859639733-ar2bmkpg6dbe1les4j00ne8toe90l4e4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
