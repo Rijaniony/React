@@ -34,7 +34,7 @@ const SignInScreen = () =>{
         //on valide d'abord l'utilisateur
         console.log(data);
 
-        navigation.navigate('HomeScreen');
+        navigation.navigate('RootClientsTabs');
 
     };
 

@@ -2,30 +2,49 @@ import React,{useState} from 'react'
 import {View, Text, StyleSheet,TouchableOpacity,ScrollView} from 'react-native';
 import {Icon, withBadge} from 'react-native-elements'
 import {colors,parameters} from '../screens/global/styles'
+import { useNavigation } from '@react-navigation/native';
+import {useForm, Controller} from 'react-hook-form';
+import SignOutScreen from './SignOutScreen';
+
 
 const HomeHeader = () => {
+
+    const navigation = useNavigation  ();//pour accéder à la navigation
+    
+    const {
+            control, 
+            handleSubmit, 
+            formState:{errors},
+        } = useForm();
+
+     /*Les fonctions */
+     /*fonction lorsqu'on press sur le boutton Map */
+    const onMapPressed = (data) => {
+     // console.warn("Map");
+    //on valide d'abord l'utilisateur
+            console.log(data);
+                                                    
+            navigation.navigate('RestaurantsMapScreen');
+                                                    
+    };
     
     const BadgeIcon = withBadge(4)(Icon);//nombre sur l'icone panier
     return(
         <View style={styles.header}>
-             <View style={{marginLeft:15,marginTop:10}}> 
-                <Icon 
-                    type='material-community'
-                    name='menu'
-                    color={colors.cardbackground}
-                    size={32}
-                /> 
-             </View>
-             <View style={{alignItems:'center', justifyContent:'center'}}>
-                <Text style={{color:colors.cardbackground,fontSize:25,fontWeight:'bold'}}>Xpress Food</Text>
-             </View>
-             <View style={{alignItems:'center', justifyContent:'center',marginRight:20}}>
+            <View style={{alignItems:'center', justifyContent:'center',marginLeft:15}}>
                 <BadgeIcon
                     type='material-community'
                     name='cart'
                     size={32}
                     color={colors.cardbackground}
                 />
+             </View>
+             
+             <View style={{alignItems:'center', justifyContent:'center'}}>
+                <Text style={{color:colors.cardbackground,fontSize:25,fontWeight:'bold'}}>Xpress Food</Text>
+             </View>
+             <View style={{marginRight:15,marginTop:10}}> 
+                <SignOutScreen /> 
              </View>
         </View>
 )}

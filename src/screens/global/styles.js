@@ -31,7 +31,7 @@ export const parameters ={
         justifyContent:"center",
         alignItems:"center",
         fontWeight:"bold",
-        margintop:-3
+        marginTop:-3
     }
     
 }
