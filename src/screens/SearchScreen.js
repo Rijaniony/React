@@ -22,7 +22,7 @@ const SearchScreen = () => {
     } = useForm();
 
     return (
-        <View style={{}}>
+        <View style={{flex:1,marginBottom:10,paddingTop:20}}>
             <SearchComponents/>
             <View>
                 <FlatList //on va prendre les images dans Data

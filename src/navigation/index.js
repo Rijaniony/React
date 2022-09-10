@@ -14,7 +14,10 @@ import Header  from '../components/Header';
 import RootClientsTabs from "./ClientsTabs";
 import RestaurantsMapScreen from "../screens/RestaurantsMapScreen";
 import GastroScreen from '../screens/GastroScreen';
-
+import PizzaScreen from '../screens/RestaurantsTabs/PizzaScreen';
+import TacosScreen from '../screens/RestaurantsTabs/TacosScreen';
+import MenuScreen from "../screens/RestaurantsTabs/MenuScreen";
+import MenuProductScreen from "../screens/MenuProductScreen";
 const Stack = createNativeStackNavigator();
 
 const Navigation = () => {
@@ -53,7 +56,29 @@ const Navigation = () => {
                         headerShown: false,
                     }}
                 />
+               
                 
+                <Stack.Screen 
+                    name="PizzaScreen" 
+                    component={PizzaScreen} 
+                    options={{
+                        headerShown: false,
+                    }}
+                />
+                <Stack.Screen 
+                    name="TacosScreen" 
+                    component={TacosScreen} 
+                    options={{
+                        headerShown: false,
+                    }}
+                />
+                <Stack.Screen 
+                    name="MenuProductScreen" 
+                    component={MenuProductScreen} 
+                    options={{
+                        headerShown: false,
+                    }}
+                />
             </Stack.Navigator>
         </NavigationContainer>
     );

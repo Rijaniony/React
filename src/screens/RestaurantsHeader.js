@@ -19,7 +19,7 @@ const RestaurantsHeader = () => {
     const likeHandle = () => {
         if(liked == false)
             setVisible(true)
-        
+
         setLiked(!liked)
         setCounter(index2)
     }
@@ -99,7 +99,7 @@ const RestaurantsHeader = () => {
 
 const styles = StyleSheet.create({
     container :{
-        height:150,
+        height:200,
     },
     image:{
         borderTopLeftRadius:5,

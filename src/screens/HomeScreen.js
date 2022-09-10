@@ -1,6 +1,6 @@
 import React,{useState} from 'react'
 import {View, Text, StyleSheet,TouchableOpacity,
-        ScrollView,FlatList, Pressable,Image, Dimensions} from 'react-native';
+        ScrollView,FlatList, Pressable,Image, Dimensions,StatusBar} from 'react-native';
 import {Icon} from 'react-native-elements'
 import HomeHeader from '../components/HomeHeader';
 import {colors,parameters} from './global/styles';
@@ -53,6 +53,11 @@ const index = () => {
      };
     return(         
         <View style={styles.container}>
+             <StatusBar
+                translucent
+                barStyle="light-content"
+                backgroundColor="rgba(255,140,82,1)"
+             />
              <HomeHeader/>
              <ScrollView //les indicateurs pour scroller de haut en bas
                 stickyHeaderIndices = {[0]}
@@ -323,7 +328,7 @@ const index = () => {
 const styles= StyleSheet.create({
     container:{
         flex:1,
-        
+        paddingTop:20,
     },
     deliveryButton:{
         paddingHorizontal: 20,
