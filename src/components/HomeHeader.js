@@ -31,7 +31,23 @@ const HomeHeader = () => {
     const BadgeIcon = withBadge(4)(Icon);//nombre sur l'icone panier
     return(
         <View style={styles.header}>
-            <View style={{alignItems:'center', justifyContent:'center',marginLeft:15}}>
+            <TouchableOpacity>
+             <View style={{marginLeft:15,marginTop:10}}> 
+                <Icon
+                    type='material'
+                    name='person'
+                    size={32}
+                    color={colors.cardbackground}
+                />
+             </View>
+             </TouchableOpacity>
+             
+             <View style={{alignItems:'center', justifyContent:'center'}}>
+                <Text style={{color:colors.cardbackground,fontSize:25,fontWeight:'bold'}}>Xpress Food</Text>
+             </View>
+            
+             <TouchableOpacity>
+             <View style={{alignItems:'center', justifyContent:'center',marginRight:25,marginTop:10}}>
                 <BadgeIcon
                     type='material-community'
                     name='cart'
@@ -39,13 +55,7 @@ const HomeHeader = () => {
                     color={colors.cardbackground}
                 />
              </View>
-             
-             <View style={{alignItems:'center', justifyContent:'center'}}>
-                <Text style={{color:colors.cardbackground,fontSize:25,fontWeight:'bold'}}>Xpress Food</Text>
-             </View>
-             <View style={{marginRight:15,marginTop:10}}> 
-                <SignOutScreen /> 
-             </View>
+             </TouchableOpacity>
         </View>
 )}
 

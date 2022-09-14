@@ -18,6 +18,8 @@ import PizzaScreen from '../screens/RestaurantsTabs/PizzaScreen';
 import TacosScreen from '../screens/RestaurantsTabs/TacosScreen';
 import MenuScreen from "../screens/RestaurantsTabs/MenuScreen";
 import MenuProductScreen from "../screens/MenuProductScreen";
+import OrderDeliveryScreen from "../screens/OrderDeliveryScreen";
+
 const Stack = createNativeStackNavigator();
 
 const Navigation = () => {
@@ -75,6 +77,14 @@ const Navigation = () => {
                 <Stack.Screen 
                     name="MenuProductScreen" 
                     component={MenuProductScreen} 
+                    options={{
+                        headerShown: false,
+                    }}
+
+                />
+                <Stack.Screen 
+                    name="OrderDeliveryScreen" 
+                    component={OrderDeliveryScreen} 
                     options={{
                         headerShown: false,
                     }}

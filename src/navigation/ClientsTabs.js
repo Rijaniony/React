@@ -34,6 +34,12 @@ const RootClientsTabs = () => {
                                 type='material'
                                 color={color}
                                 size = {size}
+                                style ={
+                                    {
+                                        width:25,
+                                        height:25,
+                                    }
+                                }
                             />
                         )
                         
@@ -55,6 +61,12 @@ const RootClientsTabs = () => {
                                 type='material'
                                 color={color}
                                 size = {size}
+                                style ={
+                                    {
+                                        width:25,
+                                        height:25,
+                                    }
+                                }
                             />
                         )
                         
@@ -75,7 +87,12 @@ const RootClientsTabs = () => {
                                 name='view-list'
                                 type='material'
                                 color={color}
-                                size = {size}
+                                size = {size}style ={
+                                    {
+                                        width:25,
+                                        height:25,
+                                    }
+                                }
                             />
                         )
                         
@@ -98,6 +115,12 @@ const RootClientsTabs = () => {
                                 type='material'
                                 color={color}
                                 size = {size}
+                                style ={
+                                    {
+                                        width:25,
+                                        height:25,
+                                    }
+                                }
                             />
                         )
                         

@@ -141,19 +141,6 @@ const GastroScreen = ({navigation,route}) => {
                 }
 
             </ScrollView>
-
-            <TouchableOpacity>
-                <View style={styles.view11}>
-                    <View style={styles.view12}>
-                        <Text style={styles.text13}>View Cart</Text>
-                        <View style={styles.text13}>
-                            <Text style={styles.text13}>0</Text>
-                        </View>
-                    </View>
-                </View>
-            </TouchableOpacity>
-            
-           
         </View>
     )
 }

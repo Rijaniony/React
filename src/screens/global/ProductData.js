@@ -1,9 +1,8 @@
 export const ProductData = [
-
-    {name:"PIZZA AU FROMAGE",price:"5000",checked:false,image:require("../images/pizza.png"),details:"La pizza est une recette de cuisine traditionnelle de la cuisine italienne, originaire de Naples à base de galette de pâte à pain, garnie de divers mélanges d’ingrédients et cuite au four",id:0},
-    {name:"PIZZA AU POULET",price:"5000",checked:false,image:require("../images/pizza.png"),details:"La pizza est une recette de cuisine traditionnelle de la cuisine italienne, originaire de Naples à base de galette de pâte à pain, garnie de divers mélanges d’ingrédients et cuite au four",id:1},
-    {name:"PIZZA AU CHARCUTERIE",price:"5000",checked:false,image:require("../images/pizza.png"),details:"La pizza est une recette de cuisine traditionnelle de la cuisine italienne, originaire de Naples à base de galette de pâte à pain, garnie de divers mélanges d’ingrédients et cuite au four",id:2},
-    {name:"PIZZA TERRE ET MER",price:"5000",checked:false,image:require("../images/pizza.png"),details:"La pizza est une recette de cuisine traditionnelle de la cuisine italienne, originaire de Naples à base de galette de pâte à pain, garnie de divers mélanges d’ingrédients et cuite au four",id:3},
+    {name:"PIZZA AU FROMAGE",price:"12000",checked:false,image:require("../images/pizza4from.png"),details:"Tomates, mozzarella, provolone, gorgonzola, olives",id:0},
+    {name:"PIZZA TERRE ET MER",price:"10000",checked:false,image:require("../images/pizza.png"),details:"Tomates, mozzarella, poulet, scampis, beurre persillé",id:1},
+    {name:"PIZZA AU CHARCUTERIE",price:"12000",checked:false,image:require("../images/pizzacharcuterie.png"),details:"Tomates, mozzarella, charcuterie",id:2},
+    {name:"PIZZA BOLOGNAISE",price:"9000",checked:false,image:require("../images/pizzabolognaise.png"),details:"Tomates, Viande hachée, Oignon, Gruyère rapé",id:3},
 ];
 
 export const ProductDataTacos=[

@@ -51,6 +51,10 @@ const index = () => {
          navigation.navigate('GastroScreen');
  
      };
+
+    const [categories, setCategories] = React.useState();
+    const [selectedCategory, setSelectedCategory] = React.useState(null);
+
     return(         
         <View style={styles.container}>
              <StatusBar
@@ -194,6 +198,7 @@ const index = () => {
                                                         marginTop:3
                                                     }}
                                                 />
+                                            
                                                 <Text style={styles.minutes}> {item.farAway} Min</Text>
                                                 <Text style={styles.minutes}> à </Text>
                                                 <Text style={styles.minutes}>{item.businessAddress}</Text>
